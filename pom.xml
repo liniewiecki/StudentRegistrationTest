@@ -1,0 +1,74 @@
+
+<project 
+	xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+		http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.nuig.ct417</groupId>
+  <artifactId>StudentRegistrationTest</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+  
+  <repositories>
+    <repository>
+        <id>Student-Registration-Core</id>
+        <name>Student-Registration-Core</name>
+        <url>
+           https://www.dropbox.com/sh/8yf6vttcvv8q3mg/AADSWdIHNJ0rhCgDreO9MAgYa?dl=0
+        </url>
+    </repository>
+</repositories>
+ 
+	
+  <dependencies>
+  	<dependency>
+  		<groupId>com.nuig.ct417</groupId>
+  		<artifactId>Student-Registration-Core</artifactId>
+  		<version>4.0</version>
+  	</dependency>
+  </dependencies>
+  
+  
+
+  
+<build>  
+     <plugins>  
+       <plugin>  
+         <artifactId>maven-assembly-plugin</artifactId>  
+         <configuration>  
+           <archive>  
+             <manifest>  
+               <mainClass>com.nuig.ct417.Driver</mainClass>  
+             </manifest>  
+           </archive>  
+           <descriptorRefs>  
+             <descriptorRef>jar-with-dependencies</descriptorRef>  
+           </descriptorRefs>  
+         </configuration>  
+         <executions>  
+           <execution>  
+             <id>make-assembly</id>  
+             <phase>package</phase>  
+             <goals>  
+               <goal>single</goal>  
+             </goals>  
+           </execution>  
+         </executions>  
+       </plugin>  
+       <plugin>  
+         <groupId>org.apache.maven.plugins</groupId>  
+         <artifactId>maven-compiler-plugin</artifactId>  
+         <version>2.5.1</version>  
+         <inherited>true</inherited>  
+         <configuration>  
+           <source>1.7</source>  
+           <target>1.7</target>  
+         </configuration>  
+       </plugin>  
+     </plugins>  
+   </build>
+  
+
+</project>
+
