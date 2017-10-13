@@ -39,7 +39,7 @@
          <configuration>  
            <archive>  
              <manifest>  
-               <mainClass>com.nuig.ct417.Driver</mainClass>  
+               <mainClass>com.nuig.ct417.Test</mainClass>  
              </manifest>  
            </archive>  
            <descriptorRefs>  
