@@ -1,6 +1,6 @@
-after_success: 
+on_success: 
   - "mvn test"
-  - java -jar /root/src/github.com/liniewiecki/StudentRegistrationTest/target/StudentRegistrationTest-1.0-jar-with-dependencies.jar
+  - java -jar /src/github.com/liniewiecki/StudentRegistrationTest/target/StudentRegistrationTest-1.0-jar-with-dependencies.jar
 jdk: 
   - oraclejdk8
 language: java
